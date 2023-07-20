@@ -165,7 +165,7 @@ void handle_client(int client_socket, int id)
 	set_name(id,name);	
 
 	// Display welcome message
-	string welcome_message=string(name)+string(" has joined");
+	string welcome_message=string(name)+string(" has joined the chat-room");
 	broadcast_message("#NULL",id);	
 	broadcast_message(id,id);								
 	broadcast_message(welcome_message,id);	
